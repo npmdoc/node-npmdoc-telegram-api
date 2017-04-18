@@ -1,0 +1,326 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/mdibaiee/node-telegram-api">telegram-api (v0.7.9)</a>
+</h1>
+<h4>Control Telegram bots easily using the new Telegram API</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.telegram-api">module telegram-api</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.telegram-api.BulkMessage">
+            function <span class="apidocSignatureSpan">telegram-api.</span>BulkMessage
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.telegram-api.File">
+            function <span class="apidocSignatureSpan">telegram-api.</span>File
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.telegram-api.Forward">
+            function <span class="apidocSignatureSpan">telegram-api.</span>Forward
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.telegram-api.Keyboard">
+            function <span class="apidocSignatureSpan">telegram-api.</span>Keyboard
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.telegram-api.Message">
+            function <span class="apidocSignatureSpan">telegram-api.</span>Message
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.telegram-api.Question">
+            function <span class="apidocSignatureSpan">telegram-api.</span>Question
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.telegram-api.default">
+            function <span class="apidocSignatureSpan">telegram-api.</span>default
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.telegram-api" id="apidoc.module.telegram-api">module telegram-api</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.telegram-api.BulkMessage" id="apidoc.element.telegram-api.BulkMessage">
+        function <span class="apidocSignatureSpan">telegram-api.</span>BulkMessage
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function BulkMessage() {
+  var properties = arguments.length &gt; 0 &amp;&amp; arguments[0] !== undefined ? arguments[0] : {};
+
+  _classCallCheck(this, BulkMessage);
+
+  var _this = _possibleConstructorReturn(this, (BulkMessage.__proto__ || Object.getPrototypeOf(BulkMessage)).call(this, properties
+));
+
+  _this.chats = [];
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.telegram-api.File" id="apidoc.element.telegram-api.File">
+        function <span class="apidocSignatureSpan">telegram-api.</span>File
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function File() {
+  var properties = arguments.length &gt; 0 &amp;&amp; arguments[0] !== undefined ? arguments[0] : {};
+
+  _classCallCheck(this, File);
+
+  var _this = _possibleConstructorReturn(this, (File.__proto__ || Object.getPrototypeOf(File)).call(this, 'sendDocument'));
+
+  _this.properties = properties;
+  _this._keyboard = new _Base3.default();
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.telegram-api.Forward" id="apidoc.element.telegram-api.Forward">
+        function <span class="apidocSignatureSpan">telegram-api.</span>Forward
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Forward() {
+  var properties = arguments.length &gt; 0 &amp;&amp; arguments[0] !== undefined ? arguments[0] : {};
+
+  _classCallCheck(this, Forward);
+
+  var _this = _possibleConstructorReturn(this, (Forward.__proto__ || Object.getPrototypeOf(Forward)).call(this, 'forwardMessage'));
+
+  _this.properties = properties;
+  _this._keyboard = new _Base3.default();
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.telegram-api.Keyboard" id="apidoc.element.telegram-api.Keyboard">
+        function <span class="apidocSignatureSpan">telegram-api.</span>Keyboard
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Keyboard() {
+  var properties = arguments.length &gt; 0 &amp;&amp; arguments[0] !== undefined ? arguments[0] : {};
+
+  _classCallCheck(this, Keyboard);
+
+  var _this = _possibleConstructorReturn(this, (Keyboard.__proto__ || Object.getPrototypeOf(Keyboard)).call(this));
+
+  _this.properties = properties;
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.telegram-api.Message" id="apidoc.element.telegram-api.Message">
+        function <span class="apidocSignatureSpan">telegram-api.</span>Message
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Message() {
+  var properties = arguments.length &gt; 0 &amp;&amp; arguments[0] !== undefined ? arguments[0] : {};
+
+  _classCallCheck(this, Message);
+
+  var _this = _possibleConstructorReturn(this, (Message.__proto__ || Object.getPrototypeOf(Message)).call(this, 'sendMessage'));
+
+  _this.properties = properties;
+  _this._keyboard = new _Base3.default();
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.telegram-api.Question" id="apidoc.element.telegram-api.Question">
+        function <span class="apidocSignatureSpan">telegram-api.</span>Question
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Question() {
+  var options = arguments.length &gt; 0 &amp;&amp; arguments[0] !== undefined ? arguments[0] : {};
+
+  _classCallCheck(this, Question);
+
+  var _this = _possibleConstructorReturn(this, (Question.__proto__ || Object.getPrototypeOf(Question)).call(this, options));
+
+  var kb = new _Keyboard2.default().force().oneTime().selective();
+  _this.keyboard(kb);
+
+  _this.answers(options.answers);
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.telegram-api.default" id="apidoc.element.telegram-api.default">
+        function <span class="apidocSignatureSpan">telegram-api.</span>default
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Bot() {
+  var options = arguments.length &gt; 0 &amp;&amp; arguments[0] !== undefined ? arguments[0] : { update: {} };
+
+  _classCallCheck(this, Bot);
+
+  var _this = _possibleConstructorReturn(this, (Bot.__proto__ || Object.getPrototypeOf(Bot)).call(this));
+
+  if (!options.token) {
+    throw new Error('Token cannot be empty');
+  }
+
+  _this.token = options.token;
+  _this.update = Object.assign(options.update || {}, DEFAULTS.update);
+
+  _this.api = new _api2.default(_this.token);
+
+  _this.msg = {};
+
+  // EventEmitter
+  _this._events = {};
+  _this._userEvents = [];
+
+  _this.setMaxListeners(100);
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}, {
+  key: 'send',
+  value: function send(bot) {
+    var _this2 = this;
+
+    var promises = this.chats.map(function (chat) {
+      var clone = Object.assign({}, _this2.properties);
+      var message = new _Message3.<span class="apidocCodeKeywordSpan">default</span>(clone).to(chat);
+      return message.send(bot);
+    });
+
+    return Promise.all(promises);
+  }
+}]);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
