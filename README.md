@@ -1,6 +1,6 @@
 # npmdoc-telegram-api
 
-#### api documentation for  [telegram-api (v0.7.9)](https://github.com/mdibaiee/node-telegram-api)  [![npm package](https://img.shields.io/npm/v/npmdoc-telegram-api.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-telegram-api) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-telegram-api.svg)](https://travis-ci.org/npmdoc/node-npmdoc-telegram-api)
+#### basic api documentation for  [telegram-api (v0.7.9)](https://github.com/mdibaiee/node-telegram-api)  [![npm package](https://img.shields.io/npm/v/npmdoc-telegram-api.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-telegram-api) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-telegram-api.svg)](https://travis-ci.org/npmdoc/node-npmdoc-telegram-api)
 
 #### Control Telegram bots easily using the new Telegram API
 
@@ -85,7 +85,8 @@
     "scripts": {
         "test": "grunt test"
     },
-    "version": "0.7.9"
+    "version": "0.7.9",
+    "bin": {}
 }
 ```
 
