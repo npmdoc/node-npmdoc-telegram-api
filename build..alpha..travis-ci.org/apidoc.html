@@ -304,20 +304,20 @@
   return _this;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-}, {
-  key: &#x27;send&#x27;,
-  value: function send(bot) {
-    var _this2 = this;
+if (!options.token) {
+  throw new Error(&#x27;Token cannot be empty&#x27;);
+}
 
-    var promises = this.chats.map(function (chat) {
-      var clone = Object.assign({}, _this2.properties);
-      var message = new _Message3.<span class="apidocCodeKeywordSpan">default</span>(clone).to(chat);
-      return message.send(bot);
-    });
+_this.token = options.token;
+_this.update = Object.assign(options.update || {}, DEFAULTS.update);
 
-    return Promise.all(promises);
-  }
-}]);
+_this.api = new _api2.<span class="apidocCodeKeywordSpan">default</span>(_this.token);
+
+_this.msg = {};
+
+// EventEmitter
+_this._events = {};
+_this._userEvents = [];
 ...</pre></li>
     </ul>
 
